@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid black; */
+}
+
+header {
+  width: 100%;
+  height: 91px;
+  background-color: #0c0a0a
+}
+main{
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  height: 800px;
+  
+}
+.hero_div_img{
+  width:100%;
+  height:800px;
+  background-image: url(./../image/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:absolute;
+}
+
+.hero__img {
+  width : 100%;
+  height: 100%;
+}
+
+.blur {
+  background-image:url(./../image/blurpattern.png);
+  width:100%;
+  height:100%;
+  z-index: 1;
+  background-size: cover;
+  position: relative;
+}
