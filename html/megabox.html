@@ -1,89 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메가박스 클론코딩</title>
+    <!-- <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./../css/megabox.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>메가박스 클론코딩</title>
-  <!-- <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./../css/megabox.css">
-</head>
-
-<body>
-  <!-- 헤더 -->
-  <header>
-
-  </header>
-  <!-- 메인 내용 -->
-  <main>
-    <section class="hero">
-      <div class="bg">
-        <div class="hero_div_img"></div>
-        <div class="blur"></div>
-      </div>
-      <div class="hero__content">
-        <div class="hero__title">
-          <div class="title__1">
-            <p>박스오피스</p>
-          </div>
-          <div class="title__2">
-            <p>더 많은 영화보기 ＋</p>
-          </div>
+  <body>
+    <!-- 헤더 -->
+    <header></header>
+    <!-- 메인 내용 -->
+    <main>
+      <section class="hero">
+        <div class="bg">
+          <!-- 블러처리 -->
+          <div class="hero_div_img"></div>
+          <div class="blur"></div>
+          <div class="blur__black"></div>
         </div>
-        <div class="movie_list_card">
-          <div class="card">
-            <div class="card__img card__img1"></div>
-            <div class="card__btn">
-              <button class="card__btn__heart">♥ 729</button>
-              <button class="card__btn__reservation">예매</button>
+        <div class="hero__content">
+          <div class="hero__title">
+            <div class="title">
+              <p>박스오피스</p>
+            </div>
+            <div class="title__more">
+              <a href="#">
+                <p>더 많은 영화보기 ＋</p>
+              </a>
             </div>
           </div>
-          <div class="card">
-            <div class="card__img card__img2"></div>
-            <div class="card__btn">
-              <button class="card__btn__heart">♥ 2K</button>
-              <button class="card__btn__reservation">예매</button>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__img card__img3"></div>
-            <div class="card__btn">
-              <button class="card__btn__heart">♥ 498</button>
-              <button class="card__btn__reservation">예매</button>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__img card__img4"></div>
-            <div class="card__btn">
-              <button class="card__btn__heart">♥ 1.1K</button>
-              <button class="card__btn__reservation">예매</button>
-            </div>
-          </div>
-        </div>
-        
-          <ul class="movie__list__toggle">
-            <li class="list__toggle_input">
-              <div>
-                <input type="text" placeholder="영화명을 입력해주세요"> 
-                 <i class="fa-solid fa-magnifying-glass"></i>
+          <div class="movie_list_card">
+            <div class="card">
+              <div class="card__img card__img1"></div>
+              <div class="card__btn">
+                <button class="card__btn__heart">♥ 729</button>
+                <a href="#" class="card__btn__reservation"> 예매 </a>
               </div>
-            </li>
-            <li class="list__toggle_btn"></li>
-            <li class="list__toggle_btn"></li>
-            <li class="list__toggle_btn"></li>
-          </ul>
-        
-        <div class="mouse"></div>
-      </div>
-    </section>
-    <section></section>
-    <section></section>
-  </main>
-  <!-- 푸터 -->
-  <footer>
+            </div>
+            <div class="card">
+              <div class="card__img card__img2"></div>
+              <div class="card__btn">
+                <button class="card__btn__heart">♥ 2K</button>
+                <a href="#" class="card__btn__reservation"> 예매 </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img card__img3"></div>
+              <div class="card__btn">
+                <button class="card__btn__heart">♥ 498</button>
+                <a href="#" class="card__btn__reservation"> 예매 </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img card__img4"></div>
+              <div class="card__btn">
+                <button class="card__btn__heart">♥ 1.1K</button>
+                <a href="#" class="card__btn__reservation"> 예매 </a>
+              </div>
+            </div>
+          </div>
+          <div class="movie__list__toggle">
+            <ul class="">
+              <li class="list__toggle_input">
+                <div class="toggle__input__cover">
+                  <input type="text" placeholder="영화명을 입력해주세요" />
+                  <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </li>
+              <div class="list__line"></div>
+              <li class="list__toggle_btn">
+                <a href="#" class="list__toggle_btn__a">
+                  <div class="toggle__btn__cover">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>상영시간표</p>
+                  </div>
+                </a>
+              </li>
+              <div class="list__line"></div>
+              <li class="list__toggle_btn">
+                <a href="#" class="list__toggle_btn__a">
+                  <div class="toggle__btn__cover">
+                    <i class="fa-solid fa-film"></i>
+                    <p>박스오피스</p>
+                  </div>
+                </a>
+              </li>
+              <div class="list__line"></div>
+              <li class="list__toggle_btn">
+                <a href="#" class="list__toggle_btn__a">
+                  <div class="toggle__btn__cover">
+                    <i class="fa-solid fa-ticket"></i>
+                    <p>예매하기</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-  </footer>
-</body>
-
+          <div class="mouse">
+            <i class="fa-solid fa-computer-mouse"></i>
+          </div>
+        </div>
+      </section>
+      <section></section>
+      <section></section>
+    </main>
+    <!-- 푸터 -->
+    <footer></footer>
+  </body>
 </html>

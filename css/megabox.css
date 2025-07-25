@@ -7,7 +7,7 @@
 header {
   width: 100%;
   height: 91px;
-  background-color: #0c0a0a
+  background-color: #0c0a0a;
 }
 
 main {
@@ -18,7 +18,6 @@ main {
 .hero {
   width: 100%;
   height: 800px;
-
 }
 
 .hero_div_img {
@@ -39,19 +38,26 @@ main {
 .blur {
   background-image: url(./../image/blurpattern.png);
   width: 100%;
-  height: 100%;
+  height: 800px;
   z-index: 1;
-  background-size: cover;
-  position: relative;
+  position: absolute;
   background-size: auto;
   background-repeat: repeat;
   filter: brightness(0%);
   object-fit: cover;
 }
+.blur__black {
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  background-color: black;
+  opacity: 0.8;
+}
 
 .hero__content {
   position: relative;
-  border: 1px solid black;
+  /* 구분점 */
+  /* border: 1px solid black; */
   z-index: 3;
   width: 1100px;
   margin: 0 auto;
@@ -65,7 +71,7 @@ main {
   display: flex;
 }
 
-.title__1 {
+.title {
   width: 85%;
   height: 100%;
   /* border: 1px solid black;  */
@@ -73,7 +79,7 @@ main {
   text-align: center;
 }
 
-.title__1 p {
+.title p {
   font-weight: bold;
   color: white;
   position: absolute;
@@ -82,14 +88,18 @@ main {
   height: 140px;
 }
 
-.title__1 {
+.title {
   display: inline;
 }
 
-.title__2 {
+.title__more > a > p {
   line-height: 260px;
   color: rgb(167, 164, 164);
   padding-left: 10px;
+}
+
+.title__more > a {
+  text-decoration: none;
 }
 
 .movie_list_card {
@@ -99,15 +109,13 @@ main {
 }
 
 .card {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
   width: 250px;
   height: 400px;
-
 }
 
 .card__img {
-
   width: 100%;
   height: 85%;
   border-radius: 20px;
@@ -118,7 +126,6 @@ main {
 
 .card__img1 {
   background-image: url(./../image/post1.jpg);
-
 }
 
 .card__img2 {
@@ -143,7 +150,7 @@ main {
   gap: 5px;
 }
 .card__btn__heart {
-  border:0.5px solid rgb(255, 255, 255);
+  border: 0.5px solid rgb(255, 255, 255);
 
   border-radius: 5px;
   width: 35%;
@@ -153,8 +160,8 @@ main {
   line-height: 33px;
   background-color: rgba(0, 0, 0, 0.774);
 }
-.card__btn__reservation {
 
+.card__btn__reservation {
   border-radius: 5px;
   width: 60%;
   height: 60%;
@@ -163,55 +170,99 @@ main {
   line-height: 33px;
   color: white;
   border: none;
+  text-decoration: none;
 }
-
 .movie__list__toggle {
-  border : 1px solid black;
+  /* border: 1px solid black; */
   width: 90%;
-  height : 10%;
+  height: 10%;
   margin: 0 auto;
+  background-color: rgb(0, 0, 0, 0.2);
+  /* opacity: 0.9; */
+}
+.movie__list__toggle > ul {
+  width: 100%;
+  height: 100%;
   display: flex;
   list-style-type: none;
 }
 
-.movie__list__toggle > li {
+.movie__list__toggle > ul > li {
   width: 25%;
   height: 100%;
-  border : 1px solid black;
+  /* border: 1px solid black; */
   color: white;
-  padding-left:20px;
+  padding-left: 20px;
   display: flex;
   align-items: center;
 }
-.list__toggle_input > div{
+.toggle__input__cover {
   display: flex;
   align-items: end;
   justify-content: center;
   gap: 10px;
   width: 80%;
   height: 50%;
-  border-bottom: 1px solid  rgb(97, 95, 95);
+  border-bottom: 2px solid rgb(162, 160, 160);
   margin-bottom: 10px;
+  margin-left: 20px;
 }
-.movie__list__toggle >  li > div > input {
+.movie__list__toggle > ul > li > div > input {
   width: 100%;
   height: 65%;
-  background-color:transparent;
+  background-color: transparent;
+  /* 배경 투명 */
   border: none;
-  /* margin-top: 10px; */
+  color: white;
+  font-weight: 700;
+  outline: none;
+}
+
+.movie__list__toggle > ul > li > div > button {
+  background-color: transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+.fa-magnifying-glass {
+  color: white;
+  width: 100%;
+}
+.list__toggle_btn__a {
+  width: 100%;
+  text-decoration: none;
+}
+
+.list__line {
+  width: 0%;
+  height: 70%;
+  border: 1px solid rgb(74 71 71);
+  margin-top: 12px;
+}
+
+.toggle__btn__cover {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 10px;
+  width: 80%;
+  height: 50%;
   color: white;
 }
 
-.movie__list__toggle > li > div >img {
-  width :15%;
-  /* margin-left: 15px;
-   margin-top: 10px; */
-   /* color: white;
-   filter: brightness(0) contrast(100); */
+.toggle__btn__cover > .fa-solid {
+  margin-bottom: 2px;
 }
 
-.fa-fa-magnifying-glass{
-  margin-bottom: 7px;
-  /* width: 100px;
-  height: 100px; */
+.mouse {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  line-height: 100px;
+}
+
+.fa-computer-mouse {
+  color: rgb(162, 160, 160);
+  font-size: 20px;
 }
