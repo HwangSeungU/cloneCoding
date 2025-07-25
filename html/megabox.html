@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>메가박스 클론코딩</title>
+  <!-- <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./../css/megabox.css">
 </head>
 
@@ -29,8 +31,49 @@
             <p>더 많은 영화보기 ＋</p>
           </div>
         </div>
-        <div class="movie_list_card"></div>
-        <div class="movie_list_toggle"></div>
+        <div class="movie_list_card">
+          <div class="card">
+            <div class="card__img card__img1"></div>
+            <div class="card__btn">
+              <button class="card__btn__heart">♥ 729</button>
+              <button class="card__btn__reservation">예매</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img card__img2"></div>
+            <div class="card__btn">
+              <button class="card__btn__heart">♥ 2K</button>
+              <button class="card__btn__reservation">예매</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img card__img3"></div>
+            <div class="card__btn">
+              <button class="card__btn__heart">♥ 498</button>
+              <button class="card__btn__reservation">예매</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img card__img4"></div>
+            <div class="card__btn">
+              <button class="card__btn__heart">♥ 1.1K</button>
+              <button class="card__btn__reservation">예매</button>
+            </div>
+          </div>
+        </div>
+        
+          <ul class="movie__list__toggle">
+            <li class="list__toggle_input">
+              <div>
+                <input type="text" placeholder="영화명을 입력해주세요"> 
+                 <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </li>
+            <li class="list__toggle_btn"></li>
+            <li class="list__toggle_btn"></li>
+            <li class="list__toggle_btn"></li>
+          </ul>
+        
         <div class="mouse"></div>
       </div>
     </section>

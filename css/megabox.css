@@ -9,7 +9,8 @@ header {
   height: 91px;
   background-color: #0c0a0a
 }
-main{
+
+main {
   width: 100%;
   margin-top: 1px;
 }
@@ -17,27 +18,28 @@ main{
 .hero {
   width: 100%;
   height: 800px;
-  
+
 }
-.hero_div_img{
-  width:100%;
-  height:800px;
+
+.hero_div_img {
+  width: 100%;
+  height: 800px;
   background-image: url(./../image/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  position:absolute;
-  filter:blur(15px);
+  position: absolute;
+  filter: blur(15px);
 }
 
 .hero__img {
-  width : 100%;
+  width: 100%;
   height: 100%;
 }
 
 .blur {
-  background-image:url(./../image/blurpattern.png);
-  width:100%;
-  height:100%;
+  background-image: url(./../image/blurpattern.png);
+  width: 100%;
+  height: 100%;
   z-index: 1;
   background-size: cover;
   position: relative;
@@ -59,14 +61,157 @@ main{
 .hero__title {
   width: 100%;
   height: 20%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
 }
+
 .title__1 {
   width: 85%;
-  border: 1px solid black; 
+  height: 100%;
+  /* border: 1px solid black;  */
+  line-height: 15;
+  text-align: center;
+}
+
+.title__1 p {
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  left: 500px;
+  border-bottom: 2px solid rgb(97, 95, 95);
+  height: 140px;
 }
 
 .title__1 {
   display: inline;
+}
+
+.title__2 {
+  line-height: 260px;
+  color: rgb(167, 164, 164);
+  padding-left: 10px;
+}
+
+.movie_list_card {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+.card {
+  border: 1px solid black;
+
+  width: 250px;
+  height: 400px;
+
+}
+
+.card__img {
+
+  width: 100%;
+  height: 85%;
+  border-radius: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.card__img1 {
+  background-image: url(./../image/post1.jpg);
+
+}
+
+.card__img2 {
+  background-image: url(./../image/post2.jpg);
+}
+
+.card__img3 {
+  background-image: url(./../image/post3.jpg);
+}
+
+.card__img4 {
+  background-image: url(./../image/post4.jpg);
+}
+
+.card__btn {
+  display: flex;
+  width: 100%;
+  height: 15%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 5px;
+}
+.card__btn__heart {
+  border:0.5px solid rgb(255, 255, 255);
+
+  border-radius: 5px;
+  width: 35%;
+  height: 60%;
+  color: white;
+  text-align: center;
+  line-height: 33px;
+  background-color: rgba(0, 0, 0, 0.774);
+}
+.card__btn__reservation {
+
+  border-radius: 5px;
+  width: 60%;
+  height: 60%;
+  background-color: #037b94;
+  text-align: center;
+  line-height: 33px;
+  color: white;
+  border: none;
+}
+
+.movie__list__toggle {
+  border : 1px solid black;
+  width: 90%;
+  height : 10%;
+  margin: 0 auto;
+  display: flex;
+  list-style-type: none;
+}
+
+.movie__list__toggle > li {
+  width: 25%;
+  height: 100%;
+  border : 1px solid black;
+  color: white;
+  padding-left:20px;
+  display: flex;
+  align-items: center;
+}
+.list__toggle_input > div{
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 10px;
+  width: 80%;
+  height: 50%;
+  border-bottom: 1px solid  rgb(97, 95, 95);
+  margin-bottom: 10px;
+}
+.movie__list__toggle >  li > div > input {
+  width: 100%;
+  height: 65%;
+  background-color:transparent;
+  border: none;
+  /* margin-top: 10px; */
+  color: white;
+}
+
+.movie__list__toggle > li > div >img {
+  width :15%;
+  /* margin-left: 15px;
+   margin-top: 10px; */
+   /* color: white;
+   filter: brightness(0) contrast(100); */
+}
+
+.fa-fa-magnifying-glass{
+  margin-bottom: 7px;
+  /* width: 100px;
+  height: 100px; */
 }
