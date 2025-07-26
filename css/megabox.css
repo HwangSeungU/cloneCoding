@@ -567,11 +567,69 @@ main {
   border-bottom: 2px solid #f0f0f0;
   width: 100%;
   height: 8%;
+  /* display: flex; */
+}
+
+.board__content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.board__title {
+  width: 20%;
+  height: 100%;
+  line-height: 56px;
+  text-align: right;
+  /* margin-right: 20px; */
+}
+
+.board__line {
+  border: 1px solid #f0f0f0;
+  height: 30%;
+  margin: 0 20px;
+}
+
+.board__link {
+  display: flex;
+  gap: 10px;
+  width: 50%;
+}
+.board__unique {
+  color: #05738b;
+  font-weight: bold;
+}
+
+.board__more {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.board__content > a {
+  text-decoration: none;
+  color: black;
+}
+.board__more > .fa-chevron-right {
+  font-size: 18px;
 }
 
 .table {
   border: 3px solid black;
-  height: 42%;
+  height: 30%;
   width: 1100px;
   margin: 0 auto;
+}
+
+.table__content {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  height: 100%;
+}
+
+.table__link {
+  width: 20%;
+  height: 100%;
 }
