@@ -266,3 +266,200 @@ main {
   color: rgb(162, 160, 160);
   font-size: 20px;
 }
+
+/* section qRation */
+
+.qRation {
+  width: 100%;
+  height: 800px;
+  background-color: #252451;
+}
+
+.qRation__content {
+  /* border: 3px solid black; */
+
+  height: 99%;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.qRation__title {
+  /* border: 1px solid black; */
+
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.qRation__title__main > p {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+.qRation__title__more > a {
+  text-decoration: none;
+}
+
+.qRation__title__more > a > p {
+  color: #aaaaaa;
+  margin-bottom: 20px;
+}
+.qRation__main {
+  width: 100%;
+  height: calc(98% - 120px);
+  display: flex;
+  gap: 12px;
+}
+
+.qRation__main__card {
+  /* border: 2px solid black; */
+
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+.qRation__main__card > a {
+  text-decoration: none;
+  width: 300px;
+  height: 430px;
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+}
+.bage__qRation__poster {
+  background-image: url(./../image/bg-bage-curation-film.png);
+  width: 123px;
+  height: 131px;
+  position: absolute;
+  z-index: 2;
+  top: -10px;
+  left: -20px;
+}
+
+.qRation__card__postImg {
+  width: 100%;
+  height: 100%;
+  background-image: url(./../image/qRation__poster.jpg);
+  border-radius: 16px;
+}
+
+.qRation__card__btns {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.qRation__card__btn {
+  width: 140px;
+  height: 80%;
+  color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 48px;
+}
+
+.qRation__card__btns > a > .qRation__detail {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.qRation__card__btns > a > .qRation__reservation {
+  background-color: #087b94;
+  border: none;
+}
+
+.qRation__main__detail {
+  /* border: 1px solid black; */
+  margin-top: 10px;
+  width: 65%;
+  height: 100%;
+  color: white;
+}
+
+.qRation__main__shopTag > p {
+  font-size: 24px;
+}
+
+.qRation__main__card__title {
+  font-size: 32px;
+}
+.qRation__main__line {
+  width: 100%;
+  height: 24px;
+  border-bottom: 2px solid #3c3962;
+  padding-bottom: 12px;
+}
+
+.qRation__main__card__detail {
+  margin-top: 12px;
+}
+
+.qRation__main__card__detail > p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+.qRation__card__detail__title {
+  line-height: 60px !important;
+}
+
+.qRation__main__card__lists {
+  /* border: 2px solid black; */
+  width: 98%;
+  height: 45%;
+  margin-top: 12px;
+}
+.qRation__main__card__lists > ul {
+  display: flex;
+  gap: 12px;
+  height: 100%;
+}
+
+.qRation__main__card__lists > ul > a {
+  margin: 0 auto;
+  /* border: 1px solid white; */
+  height: 80%;
+  width: 25%;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+.qRation__main__card__lists > ul > a > li {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  text-align: center;
+}
+
+.qRation__card__img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+.qRation__list__card > p {
+  margin-top: 12px;
+}
+
+.qRation__card__img1 {
+  background-image: url(./../image/qRation__list__img1.jpg);
+}
+.qRation__card__img2 {
+  background-image: url(./../image/qRation__list__img2.jpg);
+}
+.qRation__card__img3 {
+  background-image: url(./../image/qRation__list__img3.jpg);
+}
+.qRation__card__img4 {
+  background-image: url(./../image/qRation__list__img4.jpg);
+}
