@@ -627,9 +627,41 @@ main {
   gap: 12px;
   width: 100%;
   height: 100%;
+  margin: 0 auto;
 }
 
 .table__link {
   width: 20%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table__link > a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 8px;
+  color: black;
+}
+
+.table__link > a > i {
+  color: #58bec9;
+  font-size: 50px;
+}
+
+.ico-main-group {
+  margin: 0 auto;
+  width: 50px;
+  height: 38px;
+  background-image: url(./../image/ico-main-group.png);
+}
+
+.ico-main-boutique {
+  margin: 0 auto;
+  width: 48px;
+  height: 40px;
+  background-image: url(./../image/ico-main-boutique.png);
 }
